@@ -15,21 +15,14 @@
 .light-theme {
     --bg-color: #FFFFFF;
     --text-color: #111827;
-    /* داكن للنصوص */
     --text-muted: #6B7280;
-    /* رمادي للنصوص الثانوية */
     --primary-color: #A58BFF;
-    /* نفس اللون الأساسي */
     --primary-glow: rgba(165, 139, 255, 0.4);
     --glass-bg: rgba(255, 255, 255, 0.7);
-    /* زجاج فاتح */
     --glass-border: rgba(0, 0, 0, 0.1);
-    /* حدود زجاجية */
     --card-bg: #F3F4F6;
-    /* لون البطاقات */
 }
 
-/* تعديل بعض العناصر في Light Mode */
 .light-theme .navbar {
     background: rgba(255, 255, 255, 0.8);
     border-bottom: 1px solid var(--glass-border);
@@ -63,10 +56,8 @@
     border: 1px solid var(--glass-border);
 }
 
-/* اسم Doaa Abdeen في اللايت مود */
 .light-theme .name {
     background: linear-gradient(to right, #6B46C1, #A58BFF);
-    /* تدريج بنفسجي واضح */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -82,19 +73,15 @@
     border-top: 1px solid var(--glass-border);
 }
 
-/* عند تفعيل الوضع الفاتح */
 .light-theme .section-title {
     background: linear-gradient(to right, var(--text-color), var(--primary-color));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-/* زر Get In Touch في الوضع الفاتح */
 .light-theme .btn-outline {
     color: var(--text-color);
-    /* لون النص في اللايت */
     border: 2px solid var(--primary-color);
-    /* لون البوردر بنفسجي */
 }
 
 .light-theme .btn-outline:hover {
@@ -102,22 +89,17 @@
     color: white;
 }
 
-/* تكبير الكارد */
 .project-card {
     border-radius: 20px;
     overflow: hidden;
     border: 1px solid var(--glass-border);
     transition: all 0.4s ease;
     position: relative;
-    /* زيدي الارتفاع العام للكارد */
     min-height: 450px;
-    /* بدلاً من 220px للصورة */
 }
 
-/* تكبير صورة المشروع */
 .project-image {
     height: 300px;
-    /* زيدي الارتفاع */
     position: relative;
     display: flex;
     justify-content: center;
@@ -128,9 +110,7 @@
 .project-img {
     width: 100%;
     height: 100%;
-    /* ليملأ مساحة .project-image */
     object-fit: fill;
-    /* يحافظ على تناسق الصورة */
     border-radius: 10px;
 }
 
@@ -141,9 +121,7 @@
     gap: 1rem;
     margin-top: 2rem;
     margin: 1.5rem 0 2rem 0;
-    /* رفعهم عن الزر قليل */
     justify-content: left;
-    /* أو start إذا تحبي على الشمال */
 }
 
 .hero-social-links a {
@@ -658,28 +636,22 @@ html[data-theme="dark"] .project-content .tech-stack span {
 }
 
 
-/* تكبير الكارد */
 .project-card {
     min-height: 550px;
-    /* زيدي من 450px لـ 550px */
 }
 
-/* تكبير صورة المشروع */
 .project-image {
     height: 350px;
-    /* من 220px لـ 350px */
 }
 
 .role-info {
     display: flex;
     align-items: center;
     gap: 15px;
-    /* المسافة بين الشركة ونوع العمل */
 }
 
 .job-type i {
     margin-right: 5px;
-    /* المسافة بين الأيقونة والنص */
     color: var(--primary-color);
 }
 
@@ -706,7 +678,6 @@ html[data-theme="dark"] .project-content .tech-stack span {
     width: 100%;
     height: 100%;
     object-fit: fill;
-    /* بدل fill عشان تحافظ على تناسق الصورة */
     border-radius: 10px;
 }
 
@@ -714,14 +685,12 @@ html[data-theme="dark"] .project-content .tech-stack span {
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    /* بدل 350px خليها 400px */
     gap: 2.5rem;
 }
 
 /* Project Card */
 .project-card {
     min-height: 550px;
-    /* زي ما كنا عاملين */
     border-radius: 20px;
     overflow: hidden;
     border: 1px solid var(--glass-border);
