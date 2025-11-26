@@ -297,6 +297,16 @@ h6 {
     border-bottom: 1px solid var(--glass-border);
 }
 
+/* Light Mode */
+html[data-theme="light"] .about-text p {
+    color: #111111;
+}
+
+/* Dark Mode */
+html[data-theme="dark"] .about-text p {
+    color: #ffffff;
+}
+
 .navbar .container {
     display: flex;
     justify-content: space-between;
@@ -501,7 +511,6 @@ h6 {
 }
 
 .about-text p {
-    color: var(--text-muted);
     margin-bottom: 1.5rem;
     font-size: 1.1rem;
 }
@@ -540,6 +549,13 @@ h6 {
     position: relative;
     padding-left: 2rem;
     border-left: 2px solid var(--glass-border);
+}
+
+/* Dark Mode */
+html[data-theme="dark"] .project-content p,
+html[data-theme="dark"] .project-content h3,
+html[data-theme="dark"] .project-content .tech-stack span {
+    color: #ffffff;
 }
 
 .timeline-card {
@@ -723,7 +739,6 @@ h6 {
 }
 
 .project-content p {
-    color: var(--text-muted);
     margin-bottom: 1.5rem;
     font-size: 0.95rem;
 }
